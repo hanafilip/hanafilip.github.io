@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #faf9f7;
+  color: #252525;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+
+.page {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 70px 0 45px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 45px;
+}
+
+.portrait {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2.2rem, 6vw, 3.7rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.intro {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #666;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 18px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 65px;
+}
+
+.nav a {
+  color: #252525;
+  text-decoration: none;
+  font-size: 1.02rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.about {
+  max-width: 720px;
+  min-height: 280px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.about p {
+  font-size: 1.08rem;
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: min(100% - 30px, 900px);
+    padding-top: 40px;
+  }
+
+  .hero {
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 35px;
+  }
+
+  .portrait {
+    width: 115px;
+    height: 115px;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 14px 20px;
+    margin-bottom: 45px;
+  }
+}
